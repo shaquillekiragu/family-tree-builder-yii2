@@ -1,0 +1,538 @@
+2025-06-24 18:59:35 [127.0.0.1][-][-][error][Error] Error: Class "app\assets\AppAsset" not found in /Users/shaquillekiragu/family-tree-builder-yii2/backend/views/layouts/main.php:13
+Stack trace:
+#0 /Users/shaquillekiragu/family-tree-builder-yii2/vendor/yiisoft/yii2/base/View.php(348): require()
+#1 /Users/shaquillekiragu/family-tree-builder-yii2/vendor/yiisoft/yii2/base/View.php(258): yii\base\View->renderPhpFile('/Users/shaquill...', Array)
+#2 /Users/shaquillekiragu/family-tree-builder-yii2/vendor/yiisoft/yii2/base/Controller.php(422): yii\base\View->renderFile('/Users/shaquill...', Array, Object(app\controllers\SiteController))
+#3 /Users/shaquillekiragu/family-tree-builder-yii2/vendor/yiisoft/yii2/base/Controller.php(408): yii\base\Controller->renderContent('<div class="sit...')
+#4 /Users/shaquillekiragu/family-tree-builder-yii2/backend/controllers/SiteController.php(64): yii\base\Controller->render('index')
+#5 [internal function]: app\controllers\SiteController->actionIndex()
+#6 /Users/shaquillekiragu/family-tree-builder-yii2/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#7 /Users/shaquillekiragu/family-tree-builder-yii2/vendor/yiisoft/yii2/base/Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#8 /Users/shaquillekiragu/family-tree-builder-yii2/vendor/yiisoft/yii2/base/Module.php(552): yii\base\Controller->runAction('', Array)
+#9 /Users/shaquillekiragu/family-tree-builder-yii2/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('', Array)
+#10 /Users/shaquillekiragu/family-tree-builder-yii2/vendor/yiisoft/yii2/base/Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 /Users/shaquillekiragu/family-tree-builder-yii2/backend/web/index.php(12): yii\base\Application->run()
+#12 {main}
+2025-06-24 18:59:35 [127.0.0.1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'ncc_e' => 'n~google-analytics~ncc_f'
+    '_clck' => '1onvtyl|2|ftt|0|1869'
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => '/Users/shaquillekiragu/family-tree-builder-yii2/backend/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '63345'
+    'SERVER_SOFTWARE' => 'PHP/8.4.1 (Development Server)'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => '/Users/shaquillekiragu/family-tree-builder-yii2/backend/web/index.php'
+    'PHP_SELF' => '/index.php'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_SEC_CH_UA' => '\"Google Chrome\";v=\"137\", \"Chromium\";v=\"137\", \"Not/A)Brand\";v=\"24\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"macOS\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_SEC_FETCH_SITE' => 'none'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en-US;q=0.9,en;q=0.8'
+    'HTTP_COOKIE' => 'ncc_e=n~google-analytics~ncc_f; _clck=1onvtyl%7C2%7Cftt%7C0%7C1869'
+    'REQUEST_TIME_FLOAT' => 1750791575.2491
+    'REQUEST_TIME' => 1750791575
+]
+2025-06-24 18:59:37 [127.0.0.1][-][-][error][Error] Error: Class "app\assets\AppAsset" not found in /Users/shaquillekiragu/family-tree-builder-yii2/backend/views/layouts/main.php:13
+Stack trace:
+#0 /Users/shaquillekiragu/family-tree-builder-yii2/vendor/yiisoft/yii2/base/View.php(348): require()
+#1 /Users/shaquillekiragu/family-tree-builder-yii2/vendor/yiisoft/yii2/base/View.php(258): yii\base\View->renderPhpFile('/Users/shaquill...', Array)
+#2 /Users/shaquillekiragu/family-tree-builder-yii2/vendor/yiisoft/yii2/base/Controller.php(422): yii\base\View->renderFile('/Users/shaquill...', Array, Object(app\controllers\SiteController))
+#3 /Users/shaquillekiragu/family-tree-builder-yii2/vendor/yiisoft/yii2/base/Controller.php(408): yii\base\Controller->renderContent('<div class="sit...')
+#4 /Users/shaquillekiragu/family-tree-builder-yii2/backend/controllers/SiteController.php(64): yii\base\Controller->render('index')
+#5 [internal function]: app\controllers\SiteController->actionIndex()
+#6 /Users/shaquillekiragu/family-tree-builder-yii2/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#7 /Users/shaquillekiragu/family-tree-builder-yii2/vendor/yiisoft/yii2/base/Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#8 /Users/shaquillekiragu/family-tree-builder-yii2/vendor/yiisoft/yii2/base/Module.php(552): yii\base\Controller->runAction('', Array)
+#9 /Users/shaquillekiragu/family-tree-builder-yii2/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('', Array)
+#10 /Users/shaquillekiragu/family-tree-builder-yii2/vendor/yiisoft/yii2/base/Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 /Users/shaquillekiragu/family-tree-builder-yii2/backend/web/index.php(12): yii\base\Application->run()
+#12 {main}
+2025-06-24 18:59:37 [127.0.0.1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'ncc_e' => 'n~google-analytics~ncc_f'
+    '_clck' => '1onvtyl|2|ftt|0|1869'
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => '/Users/shaquillekiragu/family-tree-builder-yii2/backend/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '63360'
+    'SERVER_SOFTWARE' => 'PHP/8.4.1 (Development Server)'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => '/Users/shaquillekiragu/family-tree-builder-yii2/backend/web/index.php'
+    'PHP_SELF' => '/index.php'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_SEC_CH_UA' => '\"Google Chrome\";v=\"137\", \"Chromium\";v=\"137\", \"Not/A)Brand\";v=\"24\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"macOS\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_SEC_FETCH_SITE' => 'none'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en-US;q=0.9,en;q=0.8'
+    'HTTP_COOKIE' => 'ncc_e=n~google-analytics~ncc_f; _clck=1onvtyl%7C2%7Cftt%7C0%7C1869'
+    'REQUEST_TIME_FLOAT' => 1750791577.2092
+    'REQUEST_TIME' => 1750791577
+]
+2025-06-24 19:00:53 [127.0.0.1][-][-][error][Error] Error: Class "app\frontend\assets\AppAsset" not found in /Users/shaquillekiragu/family-tree-builder-yii2/backend/views/layouts/main.php:13
+Stack trace:
+#0 /Users/shaquillekiragu/family-tree-builder-yii2/vendor/yiisoft/yii2/base/View.php(348): require()
+#1 /Users/shaquillekiragu/family-tree-builder-yii2/vendor/yiisoft/yii2/base/View.php(258): yii\base\View->renderPhpFile('/Users/shaquill...', Array)
+#2 /Users/shaquillekiragu/family-tree-builder-yii2/vendor/yiisoft/yii2/base/Controller.php(422): yii\base\View->renderFile('/Users/shaquill...', Array, Object(app\controllers\SiteController))
+#3 /Users/shaquillekiragu/family-tree-builder-yii2/vendor/yiisoft/yii2/base/Controller.php(408): yii\base\Controller->renderContent('<div class="sit...')
+#4 /Users/shaquillekiragu/family-tree-builder-yii2/backend/controllers/SiteController.php(64): yii\base\Controller->render('index')
+#5 [internal function]: app\controllers\SiteController->actionIndex()
+#6 /Users/shaquillekiragu/family-tree-builder-yii2/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#7 /Users/shaquillekiragu/family-tree-builder-yii2/vendor/yiisoft/yii2/base/Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#8 /Users/shaquillekiragu/family-tree-builder-yii2/vendor/yiisoft/yii2/base/Module.php(552): yii\base\Controller->runAction('', Array)
+#9 /Users/shaquillekiragu/family-tree-builder-yii2/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('', Array)
+#10 /Users/shaquillekiragu/family-tree-builder-yii2/vendor/yiisoft/yii2/base/Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 /Users/shaquillekiragu/family-tree-builder-yii2/backend/web/index.php(12): yii\base\Application->run()
+#12 {main}
+2025-06-24 19:00:53 [127.0.0.1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'ncc_e' => 'n~google-analytics~ncc_f'
+    '_clck' => '1onvtyl|2|ftt|0|1869'
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => '/Users/shaquillekiragu/family-tree-builder-yii2/backend/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '63708'
+    'SERVER_SOFTWARE' => 'PHP/8.4.1 (Development Server)'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => '/Users/shaquillekiragu/family-tree-builder-yii2/backend/web/index.php'
+    'PHP_SELF' => '/index.php'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_SEC_CH_UA' => '\"Google Chrome\";v=\"137\", \"Chromium\";v=\"137\", \"Not/A)Brand\";v=\"24\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"macOS\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_SEC_FETCH_SITE' => 'none'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en-US;q=0.9,en;q=0.8'
+    'HTTP_COOKIE' => 'ncc_e=n~google-analytics~ncc_f; _clck=1onvtyl%7C2%7Cftt%7C0%7C1869'
+    'REQUEST_TIME_FLOAT' => 1750791653.6881
+    'REQUEST_TIME' => 1750791653
+]
+2025-06-24 19:00:54 [127.0.0.1][-][-][error][Error] Error: Class "app\frontend\assets\AppAsset" not found in /Users/shaquillekiragu/family-tree-builder-yii2/backend/views/layouts/main.php:13
+Stack trace:
+#0 /Users/shaquillekiragu/family-tree-builder-yii2/vendor/yiisoft/yii2/base/View.php(348): require()
+#1 /Users/shaquillekiragu/family-tree-builder-yii2/vendor/yiisoft/yii2/base/View.php(258): yii\base\View->renderPhpFile('/Users/shaquill...', Array)
+#2 /Users/shaquillekiragu/family-tree-builder-yii2/vendor/yiisoft/yii2/base/Controller.php(422): yii\base\View->renderFile('/Users/shaquill...', Array, Object(app\controllers\SiteController))
+#3 /Users/shaquillekiragu/family-tree-builder-yii2/vendor/yiisoft/yii2/base/Controller.php(408): yii\base\Controller->renderContent('<div class="sit...')
+#4 /Users/shaquillekiragu/family-tree-builder-yii2/backend/controllers/SiteController.php(64): yii\base\Controller->render('index')
+#5 [internal function]: app\controllers\SiteController->actionIndex()
+#6 /Users/shaquillekiragu/family-tree-builder-yii2/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#7 /Users/shaquillekiragu/family-tree-builder-yii2/vendor/yiisoft/yii2/base/Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#8 /Users/shaquillekiragu/family-tree-builder-yii2/vendor/yiisoft/yii2/base/Module.php(552): yii\base\Controller->runAction('', Array)
+#9 /Users/shaquillekiragu/family-tree-builder-yii2/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('', Array)
+#10 /Users/shaquillekiragu/family-tree-builder-yii2/vendor/yiisoft/yii2/base/Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 /Users/shaquillekiragu/family-tree-builder-yii2/backend/web/index.php(12): yii\base\Application->run()
+#12 {main}
+2025-06-24 19:00:54 [127.0.0.1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'ncc_e' => 'n~google-analytics~ncc_f'
+    '_clck' => '1onvtyl|2|ftt|0|1869'
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => '/Users/shaquillekiragu/family-tree-builder-yii2/backend/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '63718'
+    'SERVER_SOFTWARE' => 'PHP/8.4.1 (Development Server)'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => '/Users/shaquillekiragu/family-tree-builder-yii2/backend/web/index.php'
+    'PHP_SELF' => '/index.php'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_SEC_CH_UA' => '\"Google Chrome\";v=\"137\", \"Chromium\";v=\"137\", \"Not/A)Brand\";v=\"24\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"macOS\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_SEC_FETCH_SITE' => 'none'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en-US;q=0.9,en;q=0.8'
+    'HTTP_COOKIE' => 'ncc_e=n~google-analytics~ncc_f; _clck=1onvtyl%7C2%7Cftt%7C0%7C1869'
+    'REQUEST_TIME_FLOAT' => 1750791654.5994
+    'REQUEST_TIME' => 1750791654
+]
+2025-06-24 19:01:02 [127.0.0.1][-][-][error][Error] Error: Class "app\assets\AppAsset" not found in /Users/shaquillekiragu/family-tree-builder-yii2/backend/views/layouts/main.php:13
+Stack trace:
+#0 /Users/shaquillekiragu/family-tree-builder-yii2/vendor/yiisoft/yii2/base/View.php(348): require()
+#1 /Users/shaquillekiragu/family-tree-builder-yii2/vendor/yiisoft/yii2/base/View.php(258): yii\base\View->renderPhpFile('/Users/shaquill...', Array)
+#2 /Users/shaquillekiragu/family-tree-builder-yii2/vendor/yiisoft/yii2/base/Controller.php(422): yii\base\View->renderFile('/Users/shaquill...', Array, Object(app\controllers\SiteController))
+#3 /Users/shaquillekiragu/family-tree-builder-yii2/vendor/yiisoft/yii2/base/Controller.php(408): yii\base\Controller->renderContent('<div class="sit...')
+#4 /Users/shaquillekiragu/family-tree-builder-yii2/backend/controllers/SiteController.php(64): yii\base\Controller->render('index')
+#5 [internal function]: app\controllers\SiteController->actionIndex()
+#6 /Users/shaquillekiragu/family-tree-builder-yii2/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#7 /Users/shaquillekiragu/family-tree-builder-yii2/vendor/yiisoft/yii2/base/Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#8 /Users/shaquillekiragu/family-tree-builder-yii2/vendor/yiisoft/yii2/base/Module.php(552): yii\base\Controller->runAction('', Array)
+#9 /Users/shaquillekiragu/family-tree-builder-yii2/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('', Array)
+#10 /Users/shaquillekiragu/family-tree-builder-yii2/vendor/yiisoft/yii2/base/Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 /Users/shaquillekiragu/family-tree-builder-yii2/backend/web/index.php(12): yii\base\Application->run()
+#12 {main}
+2025-06-24 19:01:02 [127.0.0.1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'ncc_e' => 'n~google-analytics~ncc_f'
+    '_clck' => '1onvtyl|2|ftt|0|1869'
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => '/Users/shaquillekiragu/family-tree-builder-yii2/backend/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '63759'
+    'SERVER_SOFTWARE' => 'PHP/8.4.1 (Development Server)'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => '/Users/shaquillekiragu/family-tree-builder-yii2/backend/web/index.php'
+    'PHP_SELF' => '/index.php'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_SEC_CH_UA' => '\"Google Chrome\";v=\"137\", \"Chromium\";v=\"137\", \"Not/A)Brand\";v=\"24\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"macOS\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_SEC_FETCH_SITE' => 'none'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en-US;q=0.9,en;q=0.8'
+    'HTTP_COOKIE' => 'ncc_e=n~google-analytics~ncc_f; _clck=1onvtyl%7C2%7Cftt%7C0%7C1869'
+    'REQUEST_TIME_FLOAT' => 1750791662.9656
+    'REQUEST_TIME' => 1750791662
+]
+2025-06-24 19:01:15 [127.0.0.1][-][-][error][Error] Error: Class "frontend\assets\AppAsset" not found in /Users/shaquillekiragu/family-tree-builder-yii2/backend/views/layouts/main.php:13
+Stack trace:
+#0 /Users/shaquillekiragu/family-tree-builder-yii2/vendor/yiisoft/yii2/base/View.php(348): require()
+#1 /Users/shaquillekiragu/family-tree-builder-yii2/vendor/yiisoft/yii2/base/View.php(258): yii\base\View->renderPhpFile('/Users/shaquill...', Array)
+#2 /Users/shaquillekiragu/family-tree-builder-yii2/vendor/yiisoft/yii2/base/Controller.php(422): yii\base\View->renderFile('/Users/shaquill...', Array, Object(app\controllers\SiteController))
+#3 /Users/shaquillekiragu/family-tree-builder-yii2/vendor/yiisoft/yii2/base/Controller.php(408): yii\base\Controller->renderContent('<div class="sit...')
+#4 /Users/shaquillekiragu/family-tree-builder-yii2/backend/controllers/SiteController.php(64): yii\base\Controller->render('index')
+#5 [internal function]: app\controllers\SiteController->actionIndex()
+#6 /Users/shaquillekiragu/family-tree-builder-yii2/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#7 /Users/shaquillekiragu/family-tree-builder-yii2/vendor/yiisoft/yii2/base/Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#8 /Users/shaquillekiragu/family-tree-builder-yii2/vendor/yiisoft/yii2/base/Module.php(552): yii\base\Controller->runAction('', Array)
+#9 /Users/shaquillekiragu/family-tree-builder-yii2/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('', Array)
+#10 /Users/shaquillekiragu/family-tree-builder-yii2/vendor/yiisoft/yii2/base/Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 /Users/shaquillekiragu/family-tree-builder-yii2/backend/web/index.php(12): yii\base\Application->run()
+#12 {main}
+2025-06-24 19:01:15 [127.0.0.1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'ncc_e' => 'n~google-analytics~ncc_f'
+    '_clck' => '1onvtyl|2|ftt|0|1869'
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => '/Users/shaquillekiragu/family-tree-builder-yii2/backend/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '63816'
+    'SERVER_SOFTWARE' => 'PHP/8.4.1 (Development Server)'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => '/Users/shaquillekiragu/family-tree-builder-yii2/backend/web/index.php'
+    'PHP_SELF' => '/index.php'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_SEC_CH_UA' => '\"Google Chrome\";v=\"137\", \"Chromium\";v=\"137\", \"Not/A)Brand\";v=\"24\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"macOS\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_SEC_FETCH_SITE' => 'none'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en-US;q=0.9,en;q=0.8'
+    'HTTP_COOKIE' => 'ncc_e=n~google-analytics~ncc_f; _clck=1onvtyl%7C2%7Cftt%7C0%7C1869'
+    'REQUEST_TIME_FLOAT' => 1750791675.254
+    'REQUEST_TIME' => 1750791675
+]
+2025-06-24 19:01:16 [127.0.0.1][-][-][error][Error] Error: Class "frontend\assets\AppAsset" not found in /Users/shaquillekiragu/family-tree-builder-yii2/backend/views/layouts/main.php:13
+Stack trace:
+#0 /Users/shaquillekiragu/family-tree-builder-yii2/vendor/yiisoft/yii2/base/View.php(348): require()
+#1 /Users/shaquillekiragu/family-tree-builder-yii2/vendor/yiisoft/yii2/base/View.php(258): yii\base\View->renderPhpFile('/Users/shaquill...', Array)
+#2 /Users/shaquillekiragu/family-tree-builder-yii2/vendor/yiisoft/yii2/base/Controller.php(422): yii\base\View->renderFile('/Users/shaquill...', Array, Object(app\controllers\SiteController))
+#3 /Users/shaquillekiragu/family-tree-builder-yii2/vendor/yiisoft/yii2/base/Controller.php(408): yii\base\Controller->renderContent('<div class="sit...')
+#4 /Users/shaquillekiragu/family-tree-builder-yii2/backend/controllers/SiteController.php(64): yii\base\Controller->render('index')
+#5 [internal function]: app\controllers\SiteController->actionIndex()
+#6 /Users/shaquillekiragu/family-tree-builder-yii2/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#7 /Users/shaquillekiragu/family-tree-builder-yii2/vendor/yiisoft/yii2/base/Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#8 /Users/shaquillekiragu/family-tree-builder-yii2/vendor/yiisoft/yii2/base/Module.php(552): yii\base\Controller->runAction('', Array)
+#9 /Users/shaquillekiragu/family-tree-builder-yii2/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('', Array)
+#10 /Users/shaquillekiragu/family-tree-builder-yii2/vendor/yiisoft/yii2/base/Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 /Users/shaquillekiragu/family-tree-builder-yii2/backend/web/index.php(12): yii\base\Application->run()
+#12 {main}
+2025-06-24 19:01:16 [127.0.0.1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'ncc_e' => 'n~google-analytics~ncc_f'
+    '_clck' => '1onvtyl|2|ftt|0|1869'
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => '/Users/shaquillekiragu/family-tree-builder-yii2/backend/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '63826'
+    'SERVER_SOFTWARE' => 'PHP/8.4.1 (Development Server)'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => '/Users/shaquillekiragu/family-tree-builder-yii2/backend/web/index.php'
+    'PHP_SELF' => '/index.php'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_SEC_CH_UA' => '\"Google Chrome\";v=\"137\", \"Chromium\";v=\"137\", \"Not/A)Brand\";v=\"24\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"macOS\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_SEC_FETCH_SITE' => 'none'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en-US;q=0.9,en;q=0.8'
+    'HTTP_COOKIE' => 'ncc_e=n~google-analytics~ncc_f; _clck=1onvtyl%7C2%7Cftt%7C0%7C1869'
+    'REQUEST_TIME_FLOAT' => 1750791676.1038
+    'REQUEST_TIME' => 1750791676
+]
+2025-06-24 19:05:25 [127.0.0.1][-][-][error][yii\base\InvalidArgumentException] yii\base\InvalidArgumentException: The file or directory to be published does not exist: /Users/shaquillekiragu/family-tree-builder-yii2/backend/vendor/bower-asset/jquery/dist in /Users/shaquillekiragu/family-tree-builder-yii2/vendor/yiisoft/yii2/web/AssetManager.php:476
+Stack trace:
+#0 /Users/shaquillekiragu/family-tree-builder-yii2/vendor/yiisoft/yii2/web/AssetBundle.php(181): yii\web\AssetManager->publish('/Users/shaquill...', Array)
+#1 /Users/shaquillekiragu/family-tree-builder-yii2/vendor/yiisoft/yii2/web/AssetManager.php(294): yii\web\AssetBundle->publish(Object(yii\web\AssetManager))
+#2 /Users/shaquillekiragu/family-tree-builder-yii2/vendor/yiisoft/yii2/web/AssetManager.php(265): yii\web\AssetManager->loadBundle('yii\\web\\JqueryA...', Array, true)
+#3 /Users/shaquillekiragu/family-tree-builder-yii2/vendor/yiisoft/yii2/web/View.php(301): yii\web\AssetManager->getBundle('yii\\web\\JqueryA...')
+#4 /Users/shaquillekiragu/family-tree-builder-yii2/vendor/yiisoft/yii2/web/View.php(306): yii\web\View->registerAssetBundle('yii\\web\\JqueryA...', NULL)
+#5 /Users/shaquillekiragu/family-tree-builder-yii2/vendor/yiisoft/yii2/web/View.php(306): yii\web\View->registerAssetBundle('yii\\web\\YiiAsse...', NULL)
+#6 /Users/shaquillekiragu/family-tree-builder-yii2/vendor/yiisoft/yii2/web/AssetBundle.php(125): yii\web\View->registerAssetBundle('app\\assets\\AppA...')
+#7 /Users/shaquillekiragu/family-tree-builder-yii2/backend/views/layouts/main.php(13): yii\web\AssetBundle::register(Object(yii\web\View))
+#8 /Users/shaquillekiragu/family-tree-builder-yii2/vendor/yiisoft/yii2/base/View.php(348): require('/Users/shaquill...')
+#9 /Users/shaquillekiragu/family-tree-builder-yii2/vendor/yiisoft/yii2/base/View.php(258): yii\base\View->renderPhpFile('/Users/shaquill...', Array)
+#10 /Users/shaquillekiragu/family-tree-builder-yii2/vendor/yiisoft/yii2/base/Controller.php(422): yii\base\View->renderFile('/Users/shaquill...', Array, Object(app\controllers\SiteController))
+#11 /Users/shaquillekiragu/family-tree-builder-yii2/vendor/yiisoft/yii2/base/Controller.php(408): yii\base\Controller->renderContent('<div class="sit...')
+#12 /Users/shaquillekiragu/family-tree-builder-yii2/backend/controllers/SiteController.php(64): yii\base\Controller->render('index')
+#13 [internal function]: app\controllers\SiteController->actionIndex()
+#14 /Users/shaquillekiragu/family-tree-builder-yii2/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#15 /Users/shaquillekiragu/family-tree-builder-yii2/vendor/yiisoft/yii2/base/Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#16 /Users/shaquillekiragu/family-tree-builder-yii2/vendor/yiisoft/yii2/base/Module.php(552): yii\base\Controller->runAction('', Array)
+#17 /Users/shaquillekiragu/family-tree-builder-yii2/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('', Array)
+#18 /Users/shaquillekiragu/family-tree-builder-yii2/vendor/yiisoft/yii2/base/Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#19 /Users/shaquillekiragu/family-tree-builder-yii2/backend/web/index.php(12): yii\base\Application->run()
+#20 {main}
+2025-06-24 19:05:25 [127.0.0.1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'ncc_e' => 'n~google-analytics~ncc_f'
+    '_clck' => '1onvtyl|2|ftt|0|1869'
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => '/Users/shaquillekiragu/family-tree-builder-yii2/backend/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '64961'
+    'SERVER_SOFTWARE' => 'PHP/8.4.1 (Development Server)'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => '/Users/shaquillekiragu/family-tree-builder-yii2/backend/web/index.php'
+    'PHP_SELF' => '/index.php'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_SEC_CH_UA' => '\"Google Chrome\";v=\"137\", \"Chromium\";v=\"137\", \"Not/A)Brand\";v=\"24\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"macOS\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_SEC_FETCH_SITE' => 'none'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en-US;q=0.9,en;q=0.8'
+    'HTTP_COOKIE' => 'ncc_e=n~google-analytics~ncc_f; _clck=1onvtyl%7C2%7Cftt%7C0%7C1869'
+    'REQUEST_TIME_FLOAT' => 1750791925.164
+    'REQUEST_TIME' => 1750791925
+]
+2025-06-24 19:05:26 [127.0.0.1][-][-][error][yii\base\InvalidArgumentException] yii\base\InvalidArgumentException: The file or directory to be published does not exist: /Users/shaquillekiragu/family-tree-builder-yii2/backend/vendor/bower-asset/jquery/dist in /Users/shaquillekiragu/family-tree-builder-yii2/vendor/yiisoft/yii2/web/AssetManager.php:476
+Stack trace:
+#0 /Users/shaquillekiragu/family-tree-builder-yii2/vendor/yiisoft/yii2/web/AssetBundle.php(181): yii\web\AssetManager->publish('/Users/shaquill...', Array)
+#1 /Users/shaquillekiragu/family-tree-builder-yii2/vendor/yiisoft/yii2/web/AssetManager.php(294): yii\web\AssetBundle->publish(Object(yii\web\AssetManager))
+#2 /Users/shaquillekiragu/family-tree-builder-yii2/vendor/yiisoft/yii2/web/AssetManager.php(265): yii\web\AssetManager->loadBundle('yii\\web\\JqueryA...', Array, true)
+#3 /Users/shaquillekiragu/family-tree-builder-yii2/vendor/yiisoft/yii2/web/View.php(301): yii\web\AssetManager->getBundle('yii\\web\\JqueryA...')
+#4 /Users/shaquillekiragu/family-tree-builder-yii2/vendor/yiisoft/yii2/web/View.php(306): yii\web\View->registerAssetBundle('yii\\web\\JqueryA...', NULL)
+#5 /Users/shaquillekiragu/family-tree-builder-yii2/vendor/yiisoft/yii2/web/View.php(306): yii\web\View->registerAssetBundle('yii\\web\\YiiAsse...', NULL)
+#6 /Users/shaquillekiragu/family-tree-builder-yii2/vendor/yiisoft/yii2/web/AssetBundle.php(125): yii\web\View->registerAssetBundle('app\\assets\\AppA...')
+#7 /Users/shaquillekiragu/family-tree-builder-yii2/backend/views/layouts/main.php(13): yii\web\AssetBundle::register(Object(yii\web\View))
+#8 /Users/shaquillekiragu/family-tree-builder-yii2/vendor/yiisoft/yii2/base/View.php(348): require('/Users/shaquill...')
+#9 /Users/shaquillekiragu/family-tree-builder-yii2/vendor/yiisoft/yii2/base/View.php(258): yii\base\View->renderPhpFile('/Users/shaquill...', Array)
+#10 /Users/shaquillekiragu/family-tree-builder-yii2/vendor/yiisoft/yii2/base/Controller.php(422): yii\base\View->renderFile('/Users/shaquill...', Array, Object(app\controllers\SiteController))
+#11 /Users/shaquillekiragu/family-tree-builder-yii2/vendor/yiisoft/yii2/base/Controller.php(408): yii\base\Controller->renderContent('<div class="sit...')
+#12 /Users/shaquillekiragu/family-tree-builder-yii2/backend/controllers/SiteController.php(64): yii\base\Controller->render('index')
+#13 [internal function]: app\controllers\SiteController->actionIndex()
+#14 /Users/shaquillekiragu/family-tree-builder-yii2/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#15 /Users/shaquillekiragu/family-tree-builder-yii2/vendor/yiisoft/yii2/base/Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#16 /Users/shaquillekiragu/family-tree-builder-yii2/vendor/yiisoft/yii2/base/Module.php(552): yii\base\Controller->runAction('', Array)
+#17 /Users/shaquillekiragu/family-tree-builder-yii2/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('', Array)
+#18 /Users/shaquillekiragu/family-tree-builder-yii2/vendor/yiisoft/yii2/base/Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#19 /Users/shaquillekiragu/family-tree-builder-yii2/backend/web/index.php(12): yii\base\Application->run()
+#20 {main}
+2025-06-24 19:05:26 [127.0.0.1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'ncc_e' => 'n~google-analytics~ncc_f'
+    '_clck' => '1onvtyl|2|ftt|0|1869'
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => '/Users/shaquillekiragu/family-tree-builder-yii2/backend/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '64971'
+    'SERVER_SOFTWARE' => 'PHP/8.4.1 (Development Server)'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => '/Users/shaquillekiragu/family-tree-builder-yii2/backend/web/index.php'
+    'PHP_SELF' => '/index.php'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_SEC_CH_UA' => '\"Google Chrome\";v=\"137\", \"Chromium\";v=\"137\", \"Not/A)Brand\";v=\"24\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"macOS\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_SEC_FETCH_SITE' => 'none'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en-US;q=0.9,en;q=0.8'
+    'HTTP_COOKIE' => 'ncc_e=n~google-analytics~ncc_f; _clck=1onvtyl%7C2%7Cftt%7C0%7C1869'
+    'REQUEST_TIME_FLOAT' => 1750791926.3543
+    'REQUEST_TIME' => 1750791926
+]
