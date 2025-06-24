@@ -63,7 +63,7 @@ Now you should be able to access the application through the following URL, assu
 directly under the Web root.
 
 ```
-http://localhost/basic/web/
+http://localhost/web/
 ```
 
 ### Install from an Archive File
