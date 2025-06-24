@@ -2,13 +2,9 @@
 
 ## Tech Stack:
 
-- Nuxt 3: As the full-stack project framework
-- Nuxt Server - Nitro: As the backend server
-- NuxtUI: For UI components
+- Yii2: As the full-stack project framework
 - TailwindCSS: As a CSS styling framework
-- TypeScript & @types/node: For data typing
-- PostgreSQL: As the database solution
-- Prisma: For database management
+- MySQL: As the database solution
 - Render: For full-stack project deployment
 
 <br>
