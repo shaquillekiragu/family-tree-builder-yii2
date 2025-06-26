@@ -4,9 +4,10 @@ $params = require __DIR__ . '/params.php';
 $db = require __DIR__ . '/db.php';
 
 $config = [
-    'id' => 'basic',
+    'id' => 'backend',
     'basePath' => dirname(__DIR__),
     'bootstrap' => ['log'],
+    'defaultRoute' => 'www/default/index',
     'aliases' => [
         '@bower' => '@vendor/bower-asset',
         '@npm'   => '@vendor/npm-asset',
@@ -20,11 +21,12 @@ $config = [
             'class' => 'yii\caching\FileCache',
         ],
         'user' => [
-            'identityClass' => 'app\models\User',
+            'identityClass' => 'backend\models\User',
             'enableAutoLogin' => true,
+            'loginUrl' => ['www/site/login'],
         ],
         'errorHandler' => [
-            'errorAction' => 'site/error',
+            'errorAction' => 'www/site/error',
         ],
         'mailer' => [
             'class' => \yii\symfonymailer\Mailer::class,
@@ -42,14 +44,15 @@ $config = [
             ],
         ],
         'db' => $db,
-        /*
         'urlManager' => [
             'enablePrettyUrl' => true,
             'showScriptName' => false,
             'rules' => [
+                'admin/<controller:\w+>/<action:\w+>' => 'admin/<controller>/<action>',
+                'www/<controller:\w+>/<action:\w+>' => 'www/<controller>/<action>',
+                '<controller:\w+>/<action:\w+>' => 'www/<controller>/<action>',
             ],
         ],
-        */
     ],
     'params' => $params,
 ];
