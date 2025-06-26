@@ -4,13 +4,21 @@ $params = require __DIR__ . '/params.php';
 $db = require __DIR__ . '/db.php';
 
 $config = [
-    'id' => 'backend',
+    'id' => 'family-tree-builder',
     'basePath' => dirname(__DIR__),
     'bootstrap' => ['log'],
     'defaultRoute' => 'www/default/index',
     'aliases' => [
         '@bower' => '@vendor/bower-asset',
         '@npm'   => '@vendor/npm-asset',
+    ],
+    'modules' => [
+        'www' => [
+            'class' => 'www\Module',
+        ],
+        'admin' => [
+            'class' => 'admin\Module',
+        ],
     ],
     'components' => [
         'request' => [
@@ -21,7 +29,7 @@ $config = [
             'class' => 'yii\caching\FileCache',
         ],
         'user' => [
-            'identityClass' => 'backend\models\User',
+            'identityClass' => 'www\models\User',
             'enableAutoLogin' => true,
             'loginUrl' => ['www/site/login'],
         ],
