@@ -3,8 +3,8 @@
 /** @var yii\web\View $this */
 /** @var string $content */
 
-use app\www\assets\AppAsset;
-use app\widgets\Alert;
+use rest\www\assets\AppAsset;
+use rest\widgets\Alert;
 use yii\bootstrap5\Breadcrumbs;
 use yii\bootstrap5\Html;
 use yii\bootstrap5\Nav;

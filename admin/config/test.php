@@ -6,7 +6,7 @@ $db = require __DIR__ . '/test_db.php';
  * Application configuration shared by all test types
  */
 return [
-    'id' => 'basic-tests',
+    'id' => 'family-tree-builder',
     'basePath' => dirname(__DIR__),
     'aliases' => [
         '@bower' => '@vendor/bower-asset',
@@ -17,7 +17,7 @@ return [
         'db' => $db,
         'mailer' => [
             'class' => \yii\symfonymailer\Mailer::class,
-            'viewPath' => '@app/mail',
+            'viewPath' => '@admin/mail',
             // send all mails to a file by default.
             'useFileTransport' => true,
             'messageClass' => 'yii\symfonymailer\Message'
@@ -29,7 +29,7 @@ return [
             'showScriptName' => true,
         ],
         'user' => [
-            'identityClass' => 'app\models\User',
+            'identityClass' => 'admin\models\User',
         ],
         'request' => [
             'cookieValidationKey' => 'test',

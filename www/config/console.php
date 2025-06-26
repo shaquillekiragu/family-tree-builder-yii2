@@ -4,14 +4,22 @@ $params = require __DIR__ . '/params.php';
 $db = require __DIR__ . '/db.php';
 
 $config = [
-    'id' => 'basic-console',
-    'basePath' => dirname(__DIR__),
+    'id' => 'family-tree-builder',
+    'basePath' => dirname(dirname(__DIR__)),
     'bootstrap' => ['log'],
-    'controllerNamespace' => 'app\commands',
+    'controllerNamespace' => 'commands',
     'aliases' => [
         '@bower' => '@vendor/bower-asset',
         '@npm'   => '@vendor/npm-asset',
         '@tests' => '@app/tests',
+    ],
+    'modules' => [
+        'www' => [
+            'class' => 'www\Module',
+        ],
+        'admin' => [
+            'class' => 'admin\Module',
+        ],
     ],
     'components' => [
         'cache' => [

@@ -29,7 +29,7 @@ return [
             'showScriptName' => true,
         ],
         'user' => [
-            'identityClass' => 'app\models\User',
+            'identityClass' => 'www\models\User',
         ],
         'request' => [
             'cookieValidationKey' => 'test',

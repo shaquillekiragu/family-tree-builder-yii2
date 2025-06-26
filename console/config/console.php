@@ -1,13 +1,13 @@
 <?php
 
-$params = require __DIR__ . '/params.php';
-$db = require __DIR__ . '/db.php';
+$params = require __DIR__ . '/../common/config/params.php';
+$db = require __DIR__ . '/../common/config/db.php';
 
 $config = [
-    'id' => 'basic-console',
+    'id' => 'family-tree-console',
     'basePath' => dirname(__DIR__),
     'bootstrap' => ['log'],
-    'controllerNamespace' => 'rest\controllers',
+    'controllerNamespace' => 'console\controllers',
     'aliases' => [
         '@bower' => '@vendor/bower-asset',
         '@npm'   => '@vendor/npm-asset',
