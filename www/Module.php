@@ -1,6 +1,6 @@
 <?php
 
-namespace app\www;
+namespace app\www\Module;
 
 /**
  * www module definition class
