@@ -21,7 +21,7 @@ docker-compose down -v (stop and remove volumes - database data)
 # Useful Docker commands:
 
 ```
-docker --version
+docker --version <- Checks docker's version
 docker ps
 docker-compose ps
 docker-compose logs -f
