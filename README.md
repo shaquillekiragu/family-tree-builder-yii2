@@ -12,19 +12,26 @@
 # Running the project:
 
 ```
+docker-compose up -d (detached mode - runs in background)
+docker-compose up
+docker-compose down
+docker-compose down -v (stop and remove volumes - database data)
+```
+
+# Useful Docker commands:
+
+```
 docker --version
 docker ps
-docker-compose up -d
 docker-compose ps
-```
-
-# Usefull Docker commands:
-
-```
-View logs: docker-compose logs -f
-Stop the project: docker-compose down
-Restart: docker-compose restart
-Access container shell: docker-compose exec php bash
+docker-compose logs -f
+docker-compose restart
+docker-compose logs -f
+docker-compose exec php bash
+docker-compose exec php composer install
+docker-compose exec php ./yii migrate
+docker-compose exec php ./yii cache/flush-all
+docker cp container_name:/path/to/file ./local/path
 ```
 
 <br>
