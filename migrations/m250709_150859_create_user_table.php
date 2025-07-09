@@ -13,8 +13,10 @@ class m250709_150859_create_user_table extends Migration
     public function safeUp()
     {
         $this->createTable('{{%user}}', [
-            'id' => $this->primaryKey(),
+            'userId' => $this->primaryKey(),
         ]);
+        $this->addColumn('user', 'email', 'varchar(50) UNIQUE NOT NULL');
+        $this->addColumn('user', 'password', 'varchar(25) NOT NULL');
     }
 
     /**
@@ -22,6 +24,8 @@ class m250709_150859_create_user_table extends Migration
      */
     public function safeDown()
     {
+        $this->dropColumn('user', 'email');
+        $this->dropColumn('user', 'password');
         $this->dropTable('{{%user}}');
     }
 }
