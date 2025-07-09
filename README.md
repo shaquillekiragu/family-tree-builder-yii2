@@ -9,6 +9,15 @@
 
 # Running Instructions:
 
+## Create Database
+
+```sh
+brew install mysql;
+brew services start mysql;
+mysql -u root -e "CREATE DATABASE IF NOT EXISTS yii2basic CHARACTER SET utf8 COLLATE utf8_unicode_ci;";
+mysql -u root -e "CREATE DATABASE IF NOT EXISTS yii2basic_test CHARACTER SET utf8 COLLATE utf8_unicode_ci;";
+```
+
 ## First time
 
 ```sh
@@ -20,6 +29,8 @@ docker-compose up;
 ```sh
 docker-compose up;
 ```
+
+<br>
 
 ## Docker Commands:
 
@@ -38,6 +49,8 @@ docker-compose restart: Restarts the project
 docker-compose build: Rebuilds the container (if you switch Dockerfile)
 
 docker-compose up --build: Rebuilds and starts the process
+
+<br>
 
 ### Useful Commands:
 
