@@ -15,17 +15,17 @@ class m250709_161352_create_person_table extends Migration
         $this->createTable('{{%person}}', [
             'personId' => $this->primaryKey(),
         ]);
-        $this->addColumn('person', 'treeId', 'int NOT NULL');
-        $this->addColumn('person', 'firstName', 'varchar(25) NOT NULL');
-        $this->addColumn('person', 'middleNames', 'varchar(50)');
-        $this->addColumn('person', 'lastName', 'varchar(25) NOT NULL');
-        $this->addColumn('person', 'sex', 'enum("Male", "Female") NOT NULL DEFAULT "Male"');
-        $this->addColumn('person', 'dateOfBirth', 'date NOT NULL');
-        $this->addColumn('person', 'placeOfBirth', 'varchar(50) NOT NULL');
-        $this->addColumn('person', 'countryOfBirth', 'varchar(50) NOT NULL');
-        $this->addColumn('person', 'isPrimaryPerson', 'boolean NOT NULL');
-        $this->addColumn('person', 'biography', 'varchar(10000)');
-        $this->addColumn('person', 'notes', 'varchar(10000)');
+        $this->addColumn('{{%person}}', 'treeId', 'int NOT NULL');
+        $this->addColumn('{{%person}}', 'firstName', 'varchar(25) NOT NULL');
+        $this->addColumn('{{%person}}', 'middleNames', 'varchar(50)');
+        $this->addColumn('{{%person}}', 'lastName', 'varchar(25) NOT NULL');
+        $this->addColumn('{{%person}}', 'sex', 'enum("Male", "Female") NOT NULL DEFAULT "Male"');
+        $this->addColumn('{{%person}}', 'dateOfBirth', 'date NOT NULL');
+        $this->addColumn('{{%person}}', 'placeOfBirth', 'varchar(50) NOT NULL');
+        $this->addColumn('{{%person}}', 'countryOfBirth', 'varchar(50) NOT NULL');
+        $this->addColumn('{{%person}}', 'isPrimaryPerson', 'boolean NOT NULL');
+        $this->addColumn('{{%person}}', 'biography', 'varchar(10000)');
+        $this->addColumn('{{%person}}', 'notes', 'varchar(10000)');
     }
 
     /**
@@ -33,17 +33,17 @@ class m250709_161352_create_person_table extends Migration
      */
     public function safeDown()
     {
-        $this->dropColumn('person', 'treeId');
-        $this->dropColumn('person', 'firstName');
-        $this->dropColumn('person', 'middleNames');
-        $this->dropColumn('person', 'lastName');
-        $this->dropColumn('person', 'sex');
-        $this->dropColumn('person', 'dateOfBirth');
-        $this->dropColumn('person', 'placeOfBirth');
-        $this->dropColumn('person', 'countryOfBirth');
-        $this->dropColumn('person', 'isPrimaryPerson');
-        $this->dropColumn('person', 'biography');
-        $this->dropColumn('person', 'notes');
+        $this->dropColumn('{{%person}}', 'treeId');
+        $this->dropColumn('{{%person}}', 'firstName');
+        $this->dropColumn('{{%person}}', 'middleNames');
+        $this->dropColumn('{{%person}}', 'lastName');
+        $this->dropColumn('{{%person}}', 'sex');
+        $this->dropColumn('{{%person}}', 'dateOfBirth');
+        $this->dropColumn('{{%person}}', 'placeOfBirth');
+        $this->dropColumn('{{%person}}', 'countryOfBirth');
+        $this->dropColumn('{{%person}}', 'isPrimaryPerson');
+        $this->dropColumn('{{%person}}', 'biography');
+        $this->dropColumn('{{%person}}', 'notes');
         $this->dropTable('{{%person}}');
     }
 }
