@@ -8,10 +8,11 @@ $config = [
     'basePath' => dirname(__DIR__),
     'bootstrap' => ['log'],
     'defaultRoute' => 'site/index',
-    'controllerNamespace' => 'www\controllers',
+    'controllerNamespace' => 'app\controllers',
     'aliases' => [
         '@bower' => '@vendor/bower-asset',
         '@npm'   => '@vendor/npm-asset',
+        '@app'   => dirname(__DIR__) . '/www',
     ],
     'components' => [
         'request' => [
