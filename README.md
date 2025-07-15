@@ -7,9 +7,44 @@
 - MySQL: As the database solution
 - Render: For full-stack project deployment
 
+<br>
+
 # Running Instructions:
 
-## Create Database
+## Install PHP and MySQL locally
+
+```sh
+brew install php mysql
+brew services start mysql
+```
+
+## Create database
+
+```sh
+mysql -u root -e "CREATE DATABASE IF NOT EXISTS yii2basic CHARACTER SET utf8 COLLATE utf8_unicode_ci;"
+```
+
+## Install dependencies
+
+```sh
+composer install
+```
+
+## Run migrations
+
+```sh
+./yii migrate
+```
+
+## Start PHP server
+
+```sh
+php -S localhost:8080 -t web
+```
+
+<br>
+
+<!-- ## Create Database
 
 ```sh
 brew install mysql;
@@ -66,4 +101,4 @@ docker-compose exec php composer update: Update dependencies
 
 docker-compose exec php ./yii migrate: Runs db migrations
 
-docker-compose exec php ./yii cache/flush-all: Clears application cache
+docker-compose exec php ./yii cache/flush-all: Clears application cache -->
