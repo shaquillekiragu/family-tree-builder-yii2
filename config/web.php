@@ -7,14 +7,12 @@ $config = [
     'id' => 'basic',
     'basePath' => dirname(__DIR__),
     'bootstrap' => ['log'],
-    'defaultRoute' => 'www/site/index',
+    'defaultRoute' => 'site/index',
     'controllerNamespace' => 'app\controllers',
     'aliases' => [
         '@bower' => '@vendor/bower-asset',
         '@npm'   => '@vendor/npm-asset',
-        '@app'   => dirname(__DIR__),
-        '@www'   => dirname(__DIR__) . '/www',
-        '@admin' => dirname(__DIR__) . '/admin',
+        '@app'   => dirname(__DIR__) . '/www',
     ],
     'components' => [
         'request' => [
