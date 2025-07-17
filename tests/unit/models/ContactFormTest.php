@@ -2,7 +2,7 @@
 
 namespace tests\unit\models;
 
-use www\models\ContactForm;
+use app\models\ContactForm;
 use yii\mail\MessageInterface;
 
 class ContactFormTest extends \Codeception\Test\Unit

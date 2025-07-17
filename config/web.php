@@ -7,11 +7,12 @@ $config = [
     'id' => 'basic',
     'basePath' => dirname(__DIR__),
     'bootstrap' => ['log'],
-    // 'defaultRoute' => 'site/index',
-    // 'controllerNamespace' => 'www\controllers',
+    'defaultRoute' => 'site/index',
+    'controllerNamespace' => 'app\controllers',
     'aliases' => [
         '@bower' => '@vendor/bower-asset',
         '@npm'   => '@vendor/npm-asset',
+        '@app'   => dirname(__DIR__),
     ],
     'components' => [
         'request' => [
@@ -22,7 +23,7 @@ $config = [
             'class' => 'yii\caching\FileCache',
         ],
         'user' => [
-            'identityClass' => 'www\models\User',
+            'identityClass' => 'app\models\User',
             'enableAutoLogin' => true,
         ],
         'errorHandler' => [
@@ -52,16 +53,6 @@ $config = [
             ],
         ],
         */
-    ],
-    'modules' => [
-        'www' => [
-            'class' => 'www\modules\www\Module',
-            'defaultRoute' => 'site/index',
-        ],
-        'admin' => [
-            'class' => 'www\modules\admin\Module',
-            'defaultRoute' => 'site/index',
-        ],
     ],
     'params' => $params,
 ];

@@ -6,7 +6,7 @@
  * @license https://www.yiiframework.com/license/
  */
 
-namespace www\commands;
+namespace app\commands;
 
 use yii\console\Controller;
 use yii\console\ExitCode;

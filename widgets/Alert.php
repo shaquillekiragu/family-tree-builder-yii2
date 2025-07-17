@@ -1,6 +1,6 @@
 <?php
 
-namespace www\widgets;
+namespace app\widgets;
 
 use Yii;
 
