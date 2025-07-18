@@ -19,7 +19,7 @@ class m250709_161352_create_person_table extends Migration
         $this->addColumn('{{%person}}', 'firstName', 'varchar(25) NOT NULL');
         $this->addColumn('{{%person}}', 'middleNames', 'varchar(50)');
         $this->addColumn('{{%person}}', 'lastName', 'varchar(25) NOT NULL');
-        $this->addColumn('{{%person}}', 'sex', 'enum("Male", "Female") NOT NULL DEFAULT "Male"');
+        $this->addColumn('{{%person}}', 'sex', 'enum("male", "female") NOT NULL DEFAULT "male"');
         $this->addColumn('{{%person}}', 'dateOfBirth', 'date NOT NULL');
         $this->addColumn('{{%person}}', 'placeOfBirth', 'varchar(50) NOT NULL');
         $this->addColumn('{{%person}}', 'countryOfBirth', 'varchar(50) NOT NULL');
