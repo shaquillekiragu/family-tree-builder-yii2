@@ -4,6 +4,4 @@ namespace app\models;
 
 use yii\db\ActiveRecord;
 
-class Person extends ActiveRecord {
-    $
-}
+class Person extends ActiveRecord {}
