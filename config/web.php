@@ -45,14 +45,13 @@ $config = [
             ],
         ],
         'db' => $db,
-        /*
         'urlManager' => [
-            'enablePrettyUrl' => true,
-            'showScriptName' => false,
+            'enablePrettyUrl' => true, // Enable pretty URLs
+            'showScriptName' => false, // Hide file name in URL like index.php etc
             'rules' => [
+                'trees' => 'tree/index',
             ],
         ],
-        */
     ],
     'params' => $params,
 ];
