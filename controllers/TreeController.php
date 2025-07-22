@@ -11,4 +11,11 @@ class TreeController extends Controller
     {
         return $this->render("index");
     }
+
+    function actionCreate()
+    {
+        return $this->render('create', [
+            'model' => new Tree(),
+        ]);
+    }
 }

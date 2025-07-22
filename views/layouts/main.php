@@ -55,6 +55,8 @@ $this->registerLinkTag(['rel' => 'icon', 'type' => 'image/x-icon', 'href' => Yii
                     . Html::endForm()
                     . '</li>',
                 ['label' => 'Your Trees', 'url' => ['/trees']],
+                ['label' => 'Create Tree', 'url' => ['/create-tree']],
+                ['label' => 'Tree 1', 'url' => ['/trees/1']],
             ]
         ]);
         NavBar::end();

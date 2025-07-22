@@ -50,6 +50,7 @@ $config = [
             'showScriptName' => false, // Hide file name in URL like index.php etc
             'rules' => [
                 'trees' => 'tree/index',
+                'create-tree' => 'tree/create',
             ],
         ],
     ],
