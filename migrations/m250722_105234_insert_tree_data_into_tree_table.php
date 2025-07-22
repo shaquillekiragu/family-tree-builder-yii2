@@ -9,7 +9,8 @@ class m250722_105234_insert_tree_data_into_tree_table extends Migration
      */
     public function safeUp()
     {
-        $this->insert('tree', ['user_id' => 1, 'tree_name' => 'Demo Tree 1', 'tree_password' => 'password', 'created_at' => time(), 'updated_at' => time()]);
+        $this->insert('tree', ['userId' => 1, 'treeName' => 'Demo Tree 1', 'treePassword' => 'password', 'createdBy' => 1, 'createdAt' => time()]);
+        $this->delete('tree', ['treeName' => 'Demo Tree 1', 'treePassword' => 'password']);
     }
 
     /**
@@ -17,6 +18,7 @@ class m250722_105234_insert_tree_data_into_tree_table extends Migration
      */
     public function safeDown()
     {
-        $this->delete('tree', ['tree_name' => 'Demo Tree 1']);
+        $this->delete('tree', ['treeName' => 'Demo Tree 1', 'treePassword' => 'password']);
+        $this->insert('tree', ['userId' => 1, 'treeName' => 'Demo Tree 1', 'treePassword' => 'password', 'createdBy' => 1, 'createdAt' => time()]);
     }
 }
