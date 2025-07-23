@@ -3,6 +3,7 @@
 namespace app\models;
 
 use yii\db\ActiveRecord;
+use app\models\Relationship;
 
 class Person extends ActiveRecord
 {
@@ -11,5 +12,10 @@ class Person extends ActiveRecord
     public static function tableName()
     {
         return 'person';
+    }
+
+    public function getRelationships()
+    {
+        return $this->hasMany(Relationship::class, ['id' => 'relationship_id']);
     }
 }
