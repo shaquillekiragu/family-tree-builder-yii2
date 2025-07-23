@@ -2,7 +2,7 @@
 
 namespace tests\unit\models;
 
-use app\models\default\LoginForm;
+use app\models\LoginForm;
 
 class LoginFormTest extends \Codeception\Test\Unit
 {
