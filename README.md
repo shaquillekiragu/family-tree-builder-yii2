@@ -28,18 +28,26 @@ mysql -u root -e "CREATE DATABASE IF NOT EXISTS yii2basic CHARACTER SET utf8 COL
 
 ```sh
 composer install
+composer update
 ```
 
-## Run migrations
+### If you don't have composer installed, run:
 
 ```sh
-./yii migrate
+sudo apt-get update
+sudo apt install composer
 ```
 
 ## Start PHP server
 
 ```sh
 php -S localhost:8080 -t web
+```
+
+## Run migrations
+
+```sh
+php yii migrate
 ```
 
 <br>
