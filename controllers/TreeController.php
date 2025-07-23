@@ -3,13 +3,17 @@
 namespace app\controllers;
 
 use yii\base\Controller;
+use yii\web\NotFoundHttpException;
 use app\models\Tree;
 
 class TreeController extends Controller
 {
     public function actionIndex()
     {
-        return $this->render("index");
+        $trees = Tree::find()->all();
+        return $this->render('index', [
+            'trees' => $trees
+        ]);
     }
 
     public function actionCreate()
@@ -19,11 +23,16 @@ class TreeController extends Controller
         ]);
     }
 
-    public function actionView()
+    public function actionView($slug)
     {
-        $tree = Tree::findOne($id);
+        $model = Tree::findOne(['slug' => $slug]) ? Tree::findOne(['slug' => $slug]) : Tree::findOne(['tree_name' => str_replace(' ', '', $slug)]);
+
+        if ($model === null) {
+            throw new NotFoundHttpException('The requested page does not exist.');
+        }
+
         return $this->render('view', [
-            'model' => $tree,
+            'model' => $model
         ]);
     }
 }
