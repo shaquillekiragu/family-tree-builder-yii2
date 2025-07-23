@@ -5,7 +5,6 @@ namespace app\models;
 use yii\db\ActiveRecord;
 use yii\helpers\Inflector;
 use app\models\Person;
-use app\models\Relationship;
 
 class Tree extends ActiveRecord
 {

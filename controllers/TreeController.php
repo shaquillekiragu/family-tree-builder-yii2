@@ -16,7 +16,7 @@ class TreeController extends Controller
         ]);
     }
 
-    public function actionCreate()
+    public function actionCreate(int $id = 0)
     {
         return $this->render('create', [
             'model' => new Tree(),
