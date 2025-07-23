@@ -25,6 +25,7 @@ $this->registerLinkTag(['rel' => 'icon', 'type' => 'image/x-icon', 'href' => Yii
 
 <head>
     <title><?= Html::encode($this->title) ?></title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <?php $this->head() ?>
 </head>
 
