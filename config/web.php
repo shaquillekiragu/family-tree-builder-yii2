@@ -51,7 +51,7 @@ $config = [
             'rules' => [
                 'trees' => 'tree/index',
                 'create-tree' => 'tree/create',
-                'trees/<slug>' => 'tree/view',
+                'trees/<slug:.+>' => 'tree/view',
             ],
         ],
     ],
