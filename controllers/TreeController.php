@@ -5,9 +5,30 @@ namespace app\controllers;
 use yii\base\Controller;
 use yii\web\NotFoundHttpException;
 use app\models\Tree;
+use yii\filters\AccessControl;
 
 class TreeController extends Controller
 {
+    public function behaviors()
+    {
+        return [
+            'access' => [
+                'class' => AccessControl::class,
+                'rules' => [
+                    [
+                        'actions' => ['index', 'create', 'update', 'delete'],
+                        'allow' => true,
+                        'roles' => ['@'],
+                    ],
+                    [
+                        'actions' => ['*'],
+                        'allow' => false,
+                    ]
+                ],
+            ],
+        ];
+    }
+
     public function actionIndex()
     {
         $trees = Tree::find()->all();

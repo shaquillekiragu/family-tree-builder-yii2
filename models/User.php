@@ -4,9 +4,9 @@ namespace app\models;
 
 class User extends \app\models\Model implements \yii\web\IdentityInterface
 {
-    public $id;
-    public $email;
-    public $password;
+    // public $id;
+    // public $email;
+    // public $password;
     public $authKey;
     public $accessToken;
 
@@ -20,7 +20,7 @@ class User extends \app\models\Model implements \yii\web\IdentityInterface
      */
     public static function findIdentity($id)
     {
-        return static::findOne(['id' === $id]);
+        return User::findOne(['id' === $id]);
     }
 
     /**
@@ -28,7 +28,7 @@ class User extends \app\models\Model implements \yii\web\IdentityInterface
      */
     public static function findIdentityByAccessToken($token, $type = null)
     {
-        return static::findOne(['accessToken' === $token]);
+        return User::findOne(['accessToken' === $token]);
     }
 
     /**
@@ -37,11 +37,12 @@ class User extends \app\models\Model implements \yii\web\IdentityInterface
      * @param string $email
      * @return static|null
      */
-    public static function findByCredentials($email, $password)
+    public static function findByEmail($email)
     {
+        // var_dump($email);
+        // die();
         return User::findOne([
             'email' => $email,
-            'password' => $password
         ]);
     }
 
@@ -77,6 +78,8 @@ class User extends \app\models\Model implements \yii\web\IdentityInterface
      */
     public function validatePassword($password)
     {
+        // var_dump($this->password);
+        // die();
         return $this->password === $password;
     }
 }
