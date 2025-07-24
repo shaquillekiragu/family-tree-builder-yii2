@@ -7,8 +7,8 @@ class User extends \app\models\Model implements \yii\web\IdentityInterface
     // public $id;
     // public $email;
     // public $password;
-    public $authKey;
-    public $accessToken;
+    public $authKey = '1234';
+    public $accessToken = '4321';
 
     public static function tableName()
     {
@@ -20,7 +20,9 @@ class User extends \app\models\Model implements \yii\web\IdentityInterface
      */
     public static function findIdentity($id)
     {
-        return User::findOne(['id' === $id]);
+        // var_dump($id);
+        // die();
+        return User::findOne(['id' => $id]);
     }
 
     /**
@@ -28,7 +30,9 @@ class User extends \app\models\Model implements \yii\web\IdentityInterface
      */
     public static function findIdentityByAccessToken($token, $type = null)
     {
-        return User::findOne(['accessToken' === $token]);
+        // var_dump($token);
+        // die();
+        return User::findOne(['accessToken' => $token]);
     }
 
     /**
