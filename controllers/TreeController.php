@@ -5,6 +5,7 @@ namespace app\controllers;
 use yii\base\Controller;
 use yii\web\NotFoundHttpException;
 use app\models\Tree;
+use Yii;
 use yii\filters\AccessControl;
 
 class TreeController extends Controller
@@ -16,7 +17,7 @@ class TreeController extends Controller
                 'class' => AccessControl::class,
                 'rules' => [
                     [
-                        'actions' => ['index', 'create', 'update', 'delete'],
+                        'actions' => ['index', 'create', 'update', 'delete', 'view'],
                         'allow' => true,
                         'roles' => ['@'],
                     ],
@@ -44,9 +45,10 @@ class TreeController extends Controller
         ]);
     }
 
-    public function actionView($slug)
+    public function actionView()
     {
-        $model = Tree::findOne(['slug' => $slug]) ? Tree::findOne(['slug' => $slug]) : Tree::findOne(['tree_name' => str_replace(' ', '', $slug)]);
+        $slug = Yii::$app->request->get('slug');
+        $model = Tree::findOne(['slug' => $slug]);
 
         if ($model === null) {
             throw new NotFoundHttpException('The requested page does not exist.');
