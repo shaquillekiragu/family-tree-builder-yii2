@@ -15,13 +15,15 @@ class Tree extends ActiveRecord
         return 'tree';
     }
 
-    public function getSlug()
-    {
-        return Inflector::slug($this->tree_name);
-    }
-
     public function getPersons()
     {
-        return $this->hasMany(Person::class, ['id' => 'person_id']);
+        return $this->hasMany(Person::class, ['id' => 'person_id']); // Turn into a many-to-many relation - which REQUIRES a linkup table
+    }
+
+    public function beforeValidate()
+    {
+        $this->slug = Inflector::slug($this->tree_name);
+
+        return parent::beforeValidate();
     }
 }
