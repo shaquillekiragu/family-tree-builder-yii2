@@ -15,9 +15,6 @@ class User extends \app\models\Model implements \yii\web\IdentityInterface
         return 'user';
     }
 
-    /**
-     * {@inheritdoc}
-     */
     public static function findIdentity($id)
     {
         // var_dump($id);
@@ -25,9 +22,6 @@ class User extends \app\models\Model implements \yii\web\IdentityInterface
         return User::findOne(['id' => $id]);
     }
 
-    /**
-     * {@inheritdoc}
-     */
     public static function findIdentityByAccessToken($token, $type = null)
     {
         // var_dump($token);
@@ -35,12 +29,6 @@ class User extends \app\models\Model implements \yii\web\IdentityInterface
         return User::findOne(['accessToken' => $token]);
     }
 
-    /**
-     * Finds user by email
-     *
-     * @param string $email
-     * @return static|null
-     */
     public static function findByEmail($email)
     {
         // var_dump($email);
@@ -50,36 +38,21 @@ class User extends \app\models\Model implements \yii\web\IdentityInterface
         ]);
     }
 
-    /**
-     * {@inheritdoc}
-     */
     public function getId()
     {
         return $this->id;
     }
 
-    /**
-     * {@inheritdoc}
-     */
     public function getAuthKey()
     {
         return $this->authKey;
     }
 
-    /**
-     * {@inheritdoc}
-     */
     public function validateAuthKey($authKey)
     {
         return $this->authKey === $authKey;
     }
 
-    /**
-     * Validates password
-     *
-     * @param string $password password to validate
-     * @return bool if password provided is valid for current user
-     */
     public function validatePassword($password)
     {
         // var_dump($this->password);
