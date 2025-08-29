@@ -10,7 +10,7 @@ class m250829_143927_added_tree_person_linkup_table extends Migration
 	public function safeUp()
 	{
 		$this->createTable('{{%tree_person}}', [
-			'userId' => $this->primaryKey(),
+			'id' => $this->primaryKey(),
 		]);
 		$this->addColumn('tree_person', 'tree_id', 'INT(11) NOT NULL');
 		$this->addColumn('tree_person', 'person_id', 'INT(11) NOT NULL');
