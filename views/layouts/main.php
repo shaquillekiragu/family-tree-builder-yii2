@@ -27,10 +27,10 @@ $this->beginPage()
 	<?php $this->head() ?>
 </head>
 
-<body class="d-flex flex-column h-100">
+<body class="!w-screen !min-h-screen">
 	<?php $this->beginBody() ?>
 
-	<header id="header">
+	<header id="header" class="w-full">
 		<?php
 		NavBar::begin([
 			'brandLabel' => Yii::$app->name,
@@ -62,22 +62,18 @@ $this->beginPage()
 		?>
 	</header>
 
-	<main id="main" class="flex-shrink-0" role="main">
-		<div class="container">
-			<?php if (!empty($this->params['breadcrumbs'])): ?>
-				<?= Breadcrumbs::widget(['links' => $this->params['breadcrumbs']]) ?>
-			<?php endif ?>
-			<?= Alert::widget() ?>
-			<?= $content ?>
-		</div>
+	<main id="main" class="w-full flex-shrink-0" role="main">
+		<?php if (!empty($this->params['breadcrumbs'])): ?>
+			<?= Breadcrumbs::widget(['links' => $this->params['breadcrumbs']]) ?>
+		<?php endif ?>
+		<?= Alert::widget() ?>
+		<?= $content ?>
 	</main>
 
-	<footer id="footer" class="mt-auto py-3 bg-light">
-		<div class="container">
-			<div class="row text-muted">
-				<div class="col-md-6 text-center text-md-start">&copy; My Company <?= date('Y') ?></div>
-				<div class="col-md-6 text-center text-md-end"><?= Yii::powered() ?></div>
-			</div>
+	<footer id="footer" class="w-full flex justify-between px-8 py-4 bg-black **:!text-white">
+		<div class="w-full">
+			<div class="text-center">&copy; My Company <?= date('Y') ?></div>
+			<div class="text-center"><?= Yii::powered() ?></div>
 		</div>
 	</footer>
 
