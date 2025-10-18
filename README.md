@@ -44,6 +44,12 @@ sudo apt install composer
 php -S localhost:8080 -t web
 ```
 
+## Frontend URL
+
+```
+http://localhost:8080/
+```
+
 ## Run migrations
 
 ```sh
