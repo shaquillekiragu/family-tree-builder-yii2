@@ -10,8 +10,8 @@ $this->title = 'My Yii Application';
 
 	<div class="w-full flex flex-col items-center gap-3 *:text-lg">
 		<h3 class="text-white mb-3">Login or register to get started...</h3>
-		<a href="#" class="bg-white rounded-full w-40 py-3 text-center">Login</a>
+		<a href="/login" class="bg-white rounded-full w-40 py-3 text-center">Login</a>
 		<p class="text-white">or</p>
-		<a href="#" class="bg-white rounded-full w-40 py-3 text-center">Sign up</a>
+		<a href="/signup" class="bg-white rounded-full w-40 py-3 text-center">Sign up</a>
 	</div>
 </main>
